@@ -10,6 +10,6 @@ public class PlayerGuesser extends Guesser {
 
 	@Override
 	public List<String> getGuess() {
-		return TerminalUtils.getColor();
+		return TerminalUtils.getColor(true);
 	}
 }

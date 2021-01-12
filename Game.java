@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Game {
-	static String correctResponse = "B";
+	static String correctResponse = "K";
 
 	public List<Attempt> attempts;
 
@@ -40,7 +40,6 @@ public class Game {
 
 	void print() {
 		TerminalUtils.clearScreen();
-		System.out.println(codemaker);
 		System.out.println("\nGame so far: ");
 		for (int index = 0; index < attempts.size(); index++) {
 			Attempt attempt = attempts.get(index);

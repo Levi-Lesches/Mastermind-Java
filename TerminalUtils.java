@@ -14,10 +14,10 @@ public class TerminalUtils {
 		}
 	}
 
-	static public List<String> getColor() {
+	static public List<String> getColor(boolean fullLength) {
 		String input = scanner.nextLine();
 		List<String> result = Arrays.asList(input.split(" "));
-		if (result.size() != 4) {
+		if (fullLength && result.size() != ComputerCodemaker.codeLength) {
 			throw new IndexOutOfBoundsException("Invalid response: " + input);
 		}
 		return result;

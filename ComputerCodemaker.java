@@ -15,7 +15,7 @@ public class ComputerCodemaker extends Codemaker {
 			for (int guessIndex = 0; guessIndex < guess.size(); guessIndex++) {
 				String guessValue = guess.get(guessIndex);
 				if (guessValue.equals(codeValue)) {
-					result.add(guessIndex == codeIndex ? "B" : "W");
+					result.add(guessIndex == codeIndex ? "K" : "W");
 				}
 			}
 		}

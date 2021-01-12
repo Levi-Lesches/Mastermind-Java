@@ -11,6 +11,6 @@ public class PlayerCodemaker extends Codemaker {
 	public List<String> getResponse(List<String> guess) {
 		System.out.print("The guesser guessed: ");
 		System.out.println(guess);
-		return TerminalUtils.getColor();
+		return TerminalUtils.getColor(false);
 	}
 } 
